@@ -10,13 +10,16 @@ class User extends Authenticatable
 {
     use HasFactory, Notifiable;
 
-    // Fields you can mass-assign (like during create or update)
+    // mass-assign
     protected $fillable = [
         'name', 'email', 'password', 'mobile_no', 'education'
     ];
+    public function marks()
+    {
+        return $this->hasMany(Mark::class);
+        }
 
-
-    // Hide sensitive fields when converting to array/json
+ 
     protected $hidden = [
         'password',
         'remember_token',

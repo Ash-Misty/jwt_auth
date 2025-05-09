@@ -58,10 +58,10 @@
 <body>
     <h1>Welcome Home</h1>
 
-   <!-- <h3>Your Encoded JWT Token:</h3>
+    <h3>Your Encoded JWT Token:</h3>
     <div class="token-box">
-      {{ $token }}
-   </div>-->
+      {{ $token }} 
+
 
     <div class="nav-links">
         <a href="/profile">View Profile</a>

@@ -50,7 +50,8 @@
         <p><strong>Email:</strong> {{ $user->email }}</p>
         <p><strong>Mobile No:</strong> {{ $user->mobile_no }}</p>
         <p><strong>Education:</strong> {{ $user->education }}</p>
-        <a href="/home">⬅ Back to Home</a>
+        <a href="{{route('marks.show')}}">View Marks</a>
+        <a href="/home"> Back to Home</a>
     </div>
 </body>
 </html>
